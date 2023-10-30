@@ -1,0 +1,237 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10%;
+}
+
+.logo {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 27px;
+    cursor: default;
+    animation: slideright 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 16px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s all;
+    animation: navMenu 1s ease forwards;
+    animation-delay: calc(0.1s * var(--i));
+    opacity: 0;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: brown;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10%;
+    align-items: center;
+}
+
+.info h3 {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 10px 0px;
+    letter-spacing: 1px;
+}
+
+.info h1 {
+    font-size: 75px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    animation: slideRight 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.info h3 span {
+    color: aqua;
+}
+
+.part1 {
+    animation: part1 1s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.part2 {
+    animation: part1 1s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+p {
+
+    line-height: 25px;
+    margin: 20px 0px 40px 0px;
+    animation: p 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.0rem;
+}
+
+.img img {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    position: absolute;
+    top: 23%;
+    left: 60%;
+
+
+}
+
+i {
+    position: relative;
+    border: 2px solid #0ef;
+    padding: 10px;
+    border-radius: 50%;
+    color: #0ef;
+    margin: 0px 8px;
+    transition: 0.3s;
+    animation: socialicons 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s0;
+}
+
+i:hover {
+    box-shadow: 0 0 20px #0ef;
+}
+
+button {
+    background-color: #0ef;
+    margin-top: 50px;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #0ef;
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navMenu {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes part1 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes part2 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideright {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes socialicons {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes p {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
